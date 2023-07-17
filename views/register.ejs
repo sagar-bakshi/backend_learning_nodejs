@@ -15,23 +15,21 @@
 
     <title>Document</title>
   </head>
-  <body class="bg-success">
-    <div class="mx-auto w-50 bg-warning rounded">
+  <body class="bg-info">
+    <div class="mx-auto w-50 bg-success rounded">
       <main class="container border border-primary mt-4 rounded">
-        <h1 class="text-center my-4">Login Form</h1>
-        <form action="/login" method="post">
+        <h1 class="text-center my-4 text-white">Register Now</h1>
+        <form method="post">
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              id="email"
-              value="<%= locals.email %>"
-            />
+            <label for="name" class="form-label text-white">Name</label>
+            <input type="text" class="form-control" name="name" id="name" />
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
+            <label for="email" class="form-label text-white">email</label>
+            <input type="email" class="form-control" name="email" id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label text-white">Password</label>
             <input
               type="password"
               class="form-control"
@@ -39,13 +37,7 @@
               id="password"
             />
           </div>
-
-          <p class="alert alert-danger" role="alert"><%= locals.message %></p>
-          <div class="mb-3">
-            <button class="btn btn-primary my-2 w-25" type="submit">
-              Log in
-            </button>
-          </div>
+          <button class="btn btn-primary my-2" type="submit">Sign Up</button>
         </form>
       </main>
     </div>

@@ -15,8 +15,11 @@
 
     <title>Login</title>
   </head>
-  <body>
+  <body class="bg-success bg-gradient">
     <div class="container my-4 mx-auto text-center">
+      <div class="my-4">
+        <p class="text-white fs-1 fw-bolder">Hi <%= name %></p>
+      </div>
       <form action="/logout" method="get">
         <button type="submit" class="btn btn-primary">Logout</button>
       </form>
